@@ -39,7 +39,7 @@ function octetToBinary(n){
     return bits;
 }
 
-if (!isValidIP){
+if (!isValidIP(ip)){
     console.log(`Invalid IPv4 address: ${ip}`);
     process.exit(1);
 }
