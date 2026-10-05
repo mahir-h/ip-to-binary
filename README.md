@@ -16,7 +16,7 @@ A lightweight command-line tool, written in Node.js, that validates an IPv4 addr
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/ip-to-binary.git
+git clone https://github.com/mahir-h/ip-to-binary.git
 cd ip-to-binary
 ```
 

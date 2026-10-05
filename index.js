@@ -1,7 +1,4 @@
-// Goal:
-// IP:      192.168.10.5
-// Binary:  11000000.10101000.00001010.00000101
-// 32-bit:  11000000101010000000101000000101
+// Validates an IPv4 address and prints it in dotted and 32-bit binary.
 
 const ip = process.argv[2];
 
@@ -13,10 +10,9 @@ if(!ip){
 function isValidIP(ip){
     const parts = ip.split(".");
 
-    if(parts.length != 4) return false;
+    if(parts.length !== 4) return false;
 
     for(const p of parts){
-        // const num = Number(p); (this would not eliminate things like decimals.)
         if(!/^\d{1,3}$/.test(p)) return false;
         if(Number(p) > 255) return false;
     }
